@@ -7,11 +7,11 @@ function reverse(arrayOfChars) {
     const temp = arrayOfChars[leftIndex];
     arrayOfChars[leftIndex] = arrayOfChars[rightIndex];
     arrayOfChars[rightIndex] = temp;
-
     // Move towards middle
     leftIndex++;
     rightIndex--;
   }
+  return arrayOfChars.join("");
 }
 
-console.log(reverse("hello"));
+console.log(reverse(["t", "h", "i", "s"]));
